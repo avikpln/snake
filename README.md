@@ -35,9 +35,30 @@ open index.html   # or drag into your browser
 
 ```
 snake/
-├── script/       # Game logic and rendering, built on the framework
-├── css/          # Styling and layout
-├── images/       # Game assets and screenshot
-├── audio/        # Sound effects
-└── index.html    # Entry point
+├── audio/
+│   └── stroke.mp3
+├── css/
+│   └── styles.css
+├── images/
+│   ├── favicon.ico
+│   ├── screenshot.png
+│   └── snake.png
+├── script/
+│   ├── game/            # Snake game logic
+│   │   ├── direction.js
+│   │   ├── game.js
+│   │   └── position.js
+│   ├── gui/             # Graphical user interface
+│   │   ├── canvas.js
+│   │   ├── displayer.js
+│   │   ├── events.js
+│   │   ├── gui.js
+│   │   └── timer.js
+│   ├── lib/             # Shared utilities
+│   │   ├── linkedlist.js
+│   │   └── random.js
+│   └── main.js
+├── index.html
+├── LICENSE
+└── README.md
 ```
